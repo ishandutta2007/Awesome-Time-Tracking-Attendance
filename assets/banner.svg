@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Light Glow Filter -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Keyframe Animations -->
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes floatDelayed {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(10px); }
+      }
+      @keyframes pulseLight {
+        0%, 100% { opacity: 0.25; transform: scale(1); }
+        50% { opacity: 0.55; transform: scale(1.08); }
+      }
+      @keyframes clockHandRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes dotBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
+      }
+      .floating-left {
+        animation: floatSlow 6s ease-in-out infinite;
+      }
+      .floating-right {
+        animation: floatDelayed 7s ease-in-out infinite;
+      }
+      .pulsing-orb {
+        animation: pulseLight 5s ease-in-out infinite;
+      }
+      .clock-sec {
+        transform-origin: 80px 80px;
+        animation: clockHandRotate 12s linear infinite;
+      }
+      .clock-min {
+        transform-origin: 80px 80px;
+        animation: clockHandRotate 72s linear infinite;
+      }
+      .live-dot {
+        animation: dotBlink 1.8s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Background Canvas -->
+  <rect width="1200" height="360" rx="18" fill="url(#bgGrad)" />
+
+  <!-- Technical Grid Overlay -->
+  <g stroke="#38bdf8" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle cx="180" cy="90" r="130" fill="#38bdf8" opacity="0.16" filter="url(#glow)" class="pulsing-orb" />
+  <circle cx="1020" cy="270" r="140" fill="#a855f7" opacity="0.18" filter="url(#glow)" class="pulsing-orb" style="animation-delay: -2.5s;" />
+
+  <!-- DYNAMIC BACKGROUND ELEMENT 1: Left Peripheral Metrics Card -->
+  <g class="floating-left" transform="translate(45, 60)">
+    <rect width="210" height="105" rx="14" fill="url(#cardGrad)" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1.2" />
+    <!-- Clock Icon with Rotating Hands -->
+    <g transform="translate(20, 22)">
+      <circle cx="20" cy="20" r="18" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8" />
+      <!-- Minute & Second Hands -->
+      <line x1="20" y1="20" x2="20" y2="10" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+      <line x1="20" y1="20" x2="28" y2="20" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="8s" repeatCount="indefinite" />
+      </line>
+    </g>
+    <text x="70" y="38" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">ACTIVE TIME CLOCK</text>
+    <text x="70" y="58" fill="#f8fafc" font-family="monospace, system-ui" font-size="16" font-weight="700">08:42:19</text>
+    <g transform="translate(70, 72)">
+      <circle cx="5" cy="5" r="4" fill="#22c55e" class="live-dot" />
+      <text x="14" y="9" fill="#4ade80" font-family="system-ui, sans-serif" font-size="10" font-weight="600">LIVE SYNC ON</text>
+    </g>
+  </g>
+
+  <!-- DYNAMIC BACKGROUND ELEMENT 2: Left Bottom Peripheral Card -->
+  <g class="floating-left" transform="translate(55, 195)" style="animation-delay: -1.5s;">
+    <rect width="200" height="95" rx="14" fill="url(#cardGrad)" stroke="#6366f1" stroke-opacity="0.3" stroke-width="1.2" />
+    <text x="22" y="32" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">BIOMETRIC PUNCH</text>
+    <text x="22" y="56" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="15" font-weight="700">99.98% Accuracy</text>
+    <!-- Visual Progress Bar -->
+    <rect x="22" y="68" width="156" height="6" rx="3" fill="#334155" />
+    <rect x="22" y="68" width="138" height="6" rx="3" fill="#6366f1">
+      <animate attributeName="width" values="120;150;120" dur="4s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- DYNAMIC BACKGROUND ELEMENT 3: Right Peripheral Shift Roster Card -->
+  <g class="floating-right" transform="translate(945, 60)">
+    <rect width="210" height="105" rx="14" fill="url(#cardGrad)" stroke="#a855f7" stroke-opacity="0.3" stroke-width="1.2" />
+    <text x="20" y="34" fill="#c084fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">SHIFT SCHEDULING</text>
+    <text x="20" y="58" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Auto Roster Engine</text>
+    <g transform="translate(20, 72)">
+      <rect width="78" height="18" rx="9" fill="#3b82f6" fill-opacity="0.25" />
+      <text x="9" y="13" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="9" font-weight="700">✓ 42 Shifts</text>
+      <rect x="86" width="78" height="18" rx="9" fill="#10b981" fill-opacity="0.25" />
+      <text x="95" y="13" fill="#34d399" font-family="system-ui, sans-serif" font-size="9" font-weight="700">100% Filled</text>
+    </g>
+  </g>
+
+  <!-- DYNAMIC BACKGROUND ELEMENT 4: Right Bottom Peripheral Card -->
+  <g class="floating-right" transform="translate(945, 195)" style="animation-delay: -3s;">
+    <rect width="210" height="95" rx="14" fill="url(#cardGrad)" stroke="#06b6d4" stroke-opacity="0.3" stroke-width="1.2" />
+    <text x="20" y="32" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="11" font-weight="600">PAYROLL AUDITING</text>
+    <text x="20" y="56" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Labor Law Compliant</text>
+    <text x="20" y="76" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Zero Overtime Errors</text>
+  </g>
+
+  <!-- FOREGROUND: Center Main Typography & Highlights (Rendered Last to Prevent Any Occlusion) -->
+  <g transform="translate(600, 75)" text-anchor="middle">
+    <!-- Category Pill -->
+    <rect x="-190" y="-18" width="380" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.2" />
+    <text x="0" y="2" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">⚡ CURATED ECOSYSTEM DIRECTORY</text>
+
+    <!-- Main Title -->
+    <text x="0" y="62" fill="url(#titleGrad)" font-family="system-ui, -apple-system, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.5">
+      Awesome Time Tracking &amp; Attendance
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="98" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500">
+      Enterprise HCM Suites • Cloud SaaS Platforms • Smart Shift Schedulers • Self-Hosted FOSS
+    </text>
+
+    <!-- Center Highlights / Feature Pills -->
+    <g transform="translate(0, 132)">
+      <!-- Pill 1: Timesheets -->
+      <g transform="translate(-255, 0)">
+        <rect x="0" y="0" width="120" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="60" y="18" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">⏱️ Timesheets</text>
+      </g>
+      <!-- Pill 2: Shift Scheduling -->
+      <g transform="translate(-125, 0)">
+        <rect x="0" y="0" width="130" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="65" y="18" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">📅 Shift Rosters</text>
+      </g>
+      <!-- Pill 3: Biometrics & Kiosks -->
+      <g transform="translate(15, 0)">
+        <rect x="0" y="0" width="130" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="65" y="18" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">📍 Geofencing</text>
+      </g>
+      <!-- Pill 4: Open Source -->
+      <g transform="translate(155, 0)">
+        <rect x="0" y="0" width="120" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="60" y="18" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">🚀 Open-Source</text>
+      </g>
+    </g>
+
+    <!-- Bottom Verification Line -->
+    <text x="0" y="196" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="500">
+      Regularly Updated • Labor Compliance &amp; Payroll Ready • Production Tested
+    </text>
+  </g>
+</svg>
