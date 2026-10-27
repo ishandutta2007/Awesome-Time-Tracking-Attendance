@@ -72,71 +72,71 @@ The table below lists top commercial SaaS platforms, sorted in **descending orde
 
 For teams requiring data sovereignty, custom biometric device bridges, zero per-seat licensing, or offline functionality, these open-source tools offer battle-tested foundations.
 
-Repositories are listed in **descending order by GitHub star count**. Each repository badge links directly to its live stargazers page.
+Repositories are listed in **descending order by GitHub Stars_Count**. Each repository badge links directly to its live stargazers page.
 
 ### ⭐ Tier-1 Starred Projects
 
-1. **[Super Productivity](https://github.com/super-productivity/super-productivity)** [![GitHub stars](https://img.shields.io/github/stars/super-productivity/super-productivity?style=social&color=white)](https://github.com/super-productivity/super-productivity/stargazers)  
+1. **[Super Productivity](https://github.com/super-productivity/super-productivity)** [![GitHub_Stars](https://img.shields.io/github/stars/super-productivity/super-productivity?style=social&color=white)](https://github.com/super-productivity/super-productivity/stargazers)  
    *Comprehensive task planner, timeboxing tool, and work tracker for engineering teams.*  
    - **Highlights:** Built-in time tracking with break reminders, project budgeting, and seamless bi-directional synchronization with Jira, GitHub, GitLab, and OpenProject. Data is stored 100% locally with zero tracking or telemetry.  
    - **Tech Stack:** TypeScript, Angular, Electron.
 
-2. **[ActivityWatch](https://github.com/ActivityWatch/activitywatch)** [![GitHub stars](https://img.shields.io/github/stars/ActivityWatch/activitywatch?style=social&color=white)](https://github.com/ActivityWatch/activitywatch/stargazers)  
+2. **[ActivityWatch](https://github.com/ActivityWatch/activitywatch)** [![GitHub_Stars](https://img.shields.io/github/stars/ActivityWatch/activitywatch?style=social&color=white)](https://github.com/ActivityWatch/activitywatch/stargazers)  
    *The premier privacy-first, automated time tracker for individual developers and knowledge workers.*  
    - **Highlights:** Passively logs active applications, window titles, and browser tabs to reconstruct your workday timeline with high fidelity. Operates completely locally without cloud dependencies.  
    - **Tech Stack:** Python, Rust, Vue.js.
 
-3. **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** [![GitHub stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers)  
+3. **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** [![GitHub_Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers)  
    *Leading self-hosted business management platform with integrated project time tracking and timesheet billing.*  
    - **Highlights:** Track project hours across tasks, trigger stopwatch timers, and automatically transform recorded billable hours into multi-currency client invoices with payment gateway integrations.  
    - **Tech Stack:** PHP, Laravel, Flutter.
 
-4. **[solidtime](https://github.com/solidtime-io/solidtime)** [![GitHub stars](https://img.shields.io/github/stars/solidtime-io/solidtime?style=social&color=white)](https://github.com/solidtime-io/solidtime/stargazers)  
+4. **[solidtime](https://github.com/solidtime-io/solidtime)** [![GitHub_Stars](https://img.shields.io/github/stars/solidtime-io/solidtime?style=social&color=white)](https://github.com/solidtime-io/solidtime/stargazers)  
    *Modern, open-source time tracker built specifically for agencies, startups, and freelancers.*  
    - **Highlights:** Supports multi-organization workspaces, project rate management, billable vs. non-billable splits, team member role control, and clean REST APIs for custom automations.  
    - **Tech Stack:** PHP, Laravel, Vue 3, Tailwind CSS.
 
-5. **[Frappe HR](https://github.com/frappe/hrms)** [![GitHub stars](https://img.shields.io/github/stars/frappe/hrms?style=social&color=white)](https://github.com/frappe/hrms/stargazers)  
+5. **[Frappe HR](https://github.com/frappe/hrms)** [![GitHub_Stars](https://img.shields.io/github/stars/frappe/hrms?style=social&color=white)](https://github.com/frappe/hrms/stargazers)  
    *Full-featured enterprise open-source HRMS & payroll suite with deep biometric attendance integration.*  
    - **Highlights:** Automatic attendance reconciliation from biometric check-in/out hardware, shift type definitions, shift rotation requests, leave balances, overtime calculations, and ERPNext integration.  
    - **Tech Stack:** Python, Frappe Framework, JavaScript, MariaDB.
 
-6. **[Kimai](https://github.com/kimai/kimai)** [![GitHub stars](https://img.shields.io/github/stars/kimai/kimai?style=social&color=white)](https://github.com/kimai/kimai/stargazers)  
+6. **[Kimai](https://github.com/kimai/kimai)** [![GitHub_Stars](https://img.shields.io/github/stars/kimai/kimai?style=social&color=white)](https://github.com/kimai/kimai/stargazers)  
    *The gold standard in self-hosted multi-user timesheet and project time management.*  
    - **Highlights:** Records activities by customer, project, and activity; generates exportable invoices; delivers over 30 granular analytical reports; supports SAML/LDAP SSO plugins and 2FA authentication.  
    - **Tech Stack:** PHP, Symfony, Doctrine, Bootstrap.
 
-7. **[Timewarrior](https://github.com/GothenburgBitFactory/timewarrior)** [![GitHub stars](https://img.shields.io/github/stars/GothenburgBitFactory/timewarrior?style=social&color=white)](https://github.com/GothenburgBitFactory/timewarrior/stargazers)  
+7. **[Timewarrior](https://github.com/GothenburgBitFactory/timewarrior)** [![GitHub_Stars](https://img.shields.io/github/stars/GothenburgBitFactory/timewarrior?style=social&color=white)](https://github.com/GothenburgBitFactory/timewarrior/stargazers)  
    *Lightweight, keyboard-driven command-line time tracker from the makers of Taskwarrior.*  
    - **Highlights:** Tracks time intervals through simple CLI verbs, handles retrospective interval adjustments, tags work blocks, and generates ASCII and graphical terminal timesheet summaries.  
    - **Tech Stack:** C++.
 
-8. **[Traggo Server](https://github.com/traggo/server)** [![GitHub stars](https://img.shields.io/github/stars/traggo/server?style=social&color=white)](https://github.com/traggo/server/stargazers)  
+8. **[Traggo Server](https://github.com/traggo/server)** [![GitHub_Stars](https://img.shields.io/github/stars/traggo/server?style=social&color=white)](https://github.com/traggo/server/stargazers)  
    *Self-hosted tag-based time tracking server with clean web interface.*  
    - **Highlights:** Abandons rigid hierarchical folder trees in favor of flexible key-value tags (`project:alpha`, `type:review`). Includes multi-user support, real-time dashboards, and customizable analytics.  
    - **Tech Stack:** Go, React, SQLite / PostgreSQL.
 
-9. **[Horilla HRMS](https://github.com/horilla/horilla-hr)** [![GitHub stars](https://img.shields.io/github/stars/horilla/horilla-hr?style=social&color=white)](https://github.com/horilla/horilla-hr/stargazers)  
+9. **[Horilla HRMS](https://github.com/horilla/horilla-hr)** [![GitHub_Stars](https://img.shields.io/github/stars/horilla/horilla-hr?style=social&color=white)](https://github.com/horilla/horilla-hr/stargazers)  
    *Free, modern open-source Human Resource software designed for rapid team scaling.*  
    - **Highlights:** Complete employee management module featuring punch clock check-in/check-out logs, automated attendance calculation, leave tracking, and official Docker Compose deployment recipes.  
    - **Tech Stack:** Python, Django, PostgreSQL.
 
-10. **[pyzk](https://github.com/fananimi/pyzk)** [![GitHub stars](https://img.shields.io/github/stars/fananimi/pyzk?style=social&color=white)](https://github.com/fananimi/pyzk/stargazers)  
+10. **[pyzk](https://github.com/fananimi/pyzk)** [![GitHub_Stars](https://img.shields.io/github/stars/fananimi/pyzk?style=social&color=white)](https://github.com/fananimi/pyzk/stargazers)  
     *Python library for interfacing with standalone ZKTeco fingerprint and RFID attendance terminals.*  
     - **Highlights:** Connects directly over TCP/UDP to extract live attendance punch logs, synchronize device clocks, upload user biometric templates, and feed raw punch data into custom HR backends.  
     - **Tech Stack:** Python.
 
-11. **[TimeTracker](https://github.com/DRYTRIX/TimeTracker)** [![GitHub stars](https://img.shields.io/github/stars/DRYTRIX/TimeTracker?style=social&color=white)](https://github.com/DRYTRIX/TimeTracker/stargazers)  
+11. **[TimeTracker](https://github.com/DRYTRIX/TimeTracker)** [![GitHub_Stars](https://img.shields.io/github/stars/DRYTRIX/TimeTracker?style=social&color=white)](https://github.com/DRYTRIX/TimeTracker/stargazers)  
     *Self-hosted time tracking, project budgeting, and invoicing web application.*  
     - **Highlights:** Persistent server-side timers (timer continues if browser closes), multi-user workspaces, PDF/Peppol e-invoice creation, and turnkey Docker containers for NAS or private VPS servers.  
     - **Tech Stack:** PHP, MySQL, Docker.
 
-12. **[Skapp](https://github.com/SkappHQ/skapp)** [![GitHub stars](https://img.shields.io/github/stars/SkappHQ/skapp?style=social&color=white)](https://github.com/SkappHQ/skapp/stargazers)  
+12. **[Skapp](https://github.com/SkappHQ/skapp)** [![GitHub_Stars](https://img.shields.io/github/stars/SkappHQ/skapp?style=social&color=white)](https://github.com/SkappHQ/skapp/stargazers)  
     *Modern people operations and attendance portal for startups and fast-moving teams.*  
     - **Highlights:** Features employee directory, clock in/out time recording, manual adjustment approval workflows, and attendance summary reporting. Winner of the APICTA 2025 Gold Award.  
     - **Tech Stack:** TypeScript, React, Node.js, NestJS, PostgreSQL, Redis.
 
-13. **[MosP](https://github.com/es-mind/MosP)** [![GitHub stars](https://img.shields.io/github/stars/es-mind/MosP?style=social&color=white)](https://github.com/es-mind/MosP/stargazers)  
+13. **[MosP](https://github.com/es-mind/MosP)** [![GitHub_Stars](https://img.shields.io/github/stars/es-mind/MosP?style=social&color=white)](https://github.com/es-mind/MosP/stargazers)  
     *Longstanding, battle-tested open-source attendance management system from Japan.*  
     - **Highlights:** Designed for web intranet/extranet usage, recording rigorous who-when-where attendance history, shift assignments, and approval workflows. Maintained since 2006 under AGPLv3.  
     - **Tech Stack:** Java, Spring, MySQL.
@@ -170,9 +170,9 @@ Contributions are warmly welcomed! Help keep this ecosystem guide accurate and u
 1. **Fork this repository** to your personal GitHub account.
 2. **Add or update an entry** in `README.md` following our structured layout:
    - Provide the exact platform or repository name.
-   - Include official links and repository star badges where applicable.
+   - Include official links and repository Stars_Badges where applicable.
    - For SaaS, specify starting tier pricing and exact free trial / free tier limits.
-   - For open-source, ensure star count sorting remains descending.
+   - For open-source, ensure Stars_Count sorting remains descending.
 3. **Validate formatting**: Ensure tables render cleanly and all URLs resolve.
 4. **Submit a Pull Request** with a concise description of your changes.
 
